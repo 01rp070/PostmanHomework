@@ -38,7 +38,7 @@
 					"basic": [
 						{
 							"key": "username",
-							"value": "uJKjZJRtHAEtxPHdjw1SXOwXao11Kq7o1SecTldgx",
+							"value": "{{tokken}}",
 							"type": "string"
 						}
 					]
@@ -55,9 +55,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}",
+					"raw": "{{url}}",
 					"host": [
-						"{{baseURL}}"
+						"{{url}}"
 					]
 				}
 			},
@@ -71,7 +71,7 @@
 					"basic": [
 						{
 							"key": "username",
-							"value": "uJKjZJRtHAEtxPHdjw1SXOwXao11Kq7o1SecTldgx",
+							"value": "{{tokken}}",
 							"type": "string"
 						}
 					]
@@ -79,16 +79,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.paste.ee/v1/pastes/{{extractedId}}",
-					"protocol": "https",
+					"raw": "{{url}}/{{extractedId}}",
 					"host": [
-						"api",
-						"paste",
-						"ee"
+						"{{url}}"
 					],
 					"path": [
-						"v1",
-						"pastes",
 						"{{extractedId}}"
 					]
 				}
@@ -103,7 +98,7 @@
 					"basic": [
 						{
 							"key": "username",
-							"value": "uJKjZJRtHAEtxPHdjw1SXOwXao11Kq7o1SecTldgx",
+							"value": "{{tokken}}",
 							"type": "string"
 						}
 					]
@@ -111,16 +106,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://api.paste.ee/v1/pastes/{{extractedId}}",
-					"protocol": "https",
+					"raw": "{{url}}/{{extractedId}}",
 					"host": [
-						"api",
-						"paste",
-						"ee"
+						"{{url}}"
 					],
 					"path": [
-						"v1",
-						"pastes",
 						"{{extractedId}}"
 					]
 				}
@@ -133,7 +123,7 @@
 		"basic": [
 			{
 				"key": "username",
-				"value": "uJKjZJRtHAEtxPHdjw1SXOwXao11Kq7o1SecTldgx\n",
+				"value": "{{tokken}}",
 				"type": "string"
 			}
 		]
@@ -162,6 +152,10 @@
 		{
 			"key": "baseURL",
 			"value": "https://api.paste.ee/v1/pastes"
+		},
+		{
+			"key": "token",
+			"value": "uJKjZJRtHAEtxPHdjw1SXOwXao11Kq7o1SecTldgx"
 		}
 	]
 }
